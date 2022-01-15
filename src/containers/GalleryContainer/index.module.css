@@ -1,0 +1,23 @@
+.galleryContainer {
+  padding: 2rem 0 5rem 0;
+}
+
+.galleryContainer :global(.card) {
+  max-width: 310px;
+}
+
+.galleryContainer :global(.btn) {
+  background-color: #d4b254;
+  height: 60px;
+  max-width: 419px;
+  border-radius: 35px;
+  border: none;
+  padding: 1rem 3rem;
+}
+
+@media (max-width: 576px) {
+  .galleryContainer :global(.card) {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

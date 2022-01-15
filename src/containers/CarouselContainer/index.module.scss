@@ -1,0 +1,63 @@
+.carouselContainer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  // background-color: #EEEEEE !important;
+  max-height: 600px;
+  max-width: 590px;
+  padding: 5rem 0;
+  p {
+    color: #000000;
+  }
+  :global(.card-body) {
+    p:nth-child(1) {
+      color: #d4b254;
+    }
+    p:nth-child(2) {
+      color: #222222;
+    }
+    p:nth-child(3) {
+      color: #777777;
+    }
+    p:nth-child(4) {
+      font-family: Roboto;
+      font-size: 15px;
+      color: #777777;
+    }
+  }
+  :global(.card) {
+    border: none;
+  }
+  :global(.carousel-control-next-icon) {
+    background-image: url(../../images/arrow-right.png);
+    position: relative;
+    left: 12rem;
+    height: 70px;
+  }
+  :global(.carousel-control-prev-icon) {
+    background-image: url(../../images/arrow-left.png);
+    position: relative;
+    right: 12rem;
+    height: 70px;
+  }
+  :global(.carousel-indicators) {
+    display: none;
+  }
+  :global(.btn) {
+    background-color: #d4b254;
+    height: 60px;
+    max-width: 419px;
+    border-radius: 35px;
+    border: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .carouselContainer {
+    :global(.carousel-control-next-icon) {
+      left: 0;
+    }
+    :global(.carousel-control-prev-icon) {
+      right: 0;
+    }
+  }
+}

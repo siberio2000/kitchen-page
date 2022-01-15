@@ -1,0 +1,44 @@
+.topContainer {
+    max-height: 2000px;
+    position: relative;
+    bottom: 4rem;
+    p {
+      color: #000000;
+    }
+    :global(.card-body) {
+      p:nth-child(1) {
+        color: #fff;
+        font-size: 13px;
+      }
+      p:nth-child(2) {
+        color: #fff;
+        font-size: 52px;
+        line-height: 3rem;
+      }
+    }
+    :global(.btn) {
+      background-color: #d4b254;
+      height: 60px;
+      max-width: 419px;
+      border-radius: 35px;
+      border: none;
+      padding: 1rem 4rem;
+      margin: 1rem 0;
+    }
+    :global(.carousel-caption) {
+      bottom: 12rem;
+    }
+    :global(.card) {
+      background: none;
+      border: none;
+    }
+    :global(.carousel-indicators .active) {
+      background-color: #D4B254;
+    }
+    :global(.carousel-control-next-icon) {
+      display: none;
+    }
+    :global(.carousel-control-prev-icon) {
+      display: none;
+    }
+  }

@@ -1,0 +1,25 @@
+.footerContainer {
+//   background-image: url("../../images/footer-image.png");
+background-color: bisque;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  //   opacity: 0.10196078431372549;
+  height: 495px;
+  padding: 8rem;
+  :global(h5) {
+    color: #000;
+    font-size: 24px;
+  }
+  :global(a) {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footerContainer {
+    background-image: none;
+    padding: 0;
+  }
+}

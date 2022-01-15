@@ -1,0 +1,13 @@
+.navigation {
+//    max-width: 1208px; 
+   z-index: 9999;
+   :global(.btn) {
+    background-color: transparent;
+    border: 1px solid #ffffff !important;
+    border-radius: 35px;
+    border: none;
+    min-width: 77px;
+    padding: .5rem 5rem;
+    font-size: 13px;
+  }
+}

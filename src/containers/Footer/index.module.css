@@ -1,0 +1,26 @@
+.footerContainer {
+  background-color: bisque;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  height: 495px;
+  padding: 8rem;
+}
+
+.footerContainer :global(h5) {
+  color: #000;
+  font-size: 24px;
+}
+
+.footerContainer :global(a) {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+}
+
+@media (max-width: 576px) {
+  .footerContainer {
+    background-image: none;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

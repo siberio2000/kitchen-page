@@ -1,0 +1,52 @@
+.topContainer {
+  max-height: 2000px;
+  position: relative;
+  bottom: 4rem;
+}
+
+.topContainer p {
+  color: #000000;
+}
+
+.topContainer :global(.card-body) p:nth-child(1) {
+  color: #fff;
+  font-size: 13px;
+}
+
+.topContainer :global(.card-body) p:nth-child(2) {
+  color: #fff;
+  font-size: 52px;
+  line-height: 3rem;
+}
+
+.topContainer :global(.btn) {
+  background-color: #d4b254;
+  height: 60px;
+  max-width: 419px;
+  border-radius: 35px;
+  border: none;
+  padding: 1rem 4rem;
+  margin: 1rem 0;
+}
+
+.topContainer :global(.carousel-caption) {
+  bottom: 12rem;
+}
+
+.topContainer :global(.card) {
+  background: none;
+  border: none;
+}
+
+.topContainer :global(.carousel-indicators .active) {
+  background-color: #D4B254;
+}
+
+.topContainer :global(.carousel-control-next-icon) {
+  display: none;
+}
+
+.topContainer :global(.carousel-control-prev-icon) {
+  display: none;
+}
+/*# sourceMappingURL=index.module.css.map */
