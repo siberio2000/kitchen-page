@@ -2,13 +2,67 @@
   z-index: 9999;
 }
 
+.navigation :global(.container) {
+  border-bottom: 1px solid #ffffff;
+  padding: 1rem 0 1.6rem 0;
+}
+
+.navigation :global(.nav-link) {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin: 0 1rem;
+}
+
+.navigation :global(img) {
+  height: 15px;
+  margin: 4px 0.5rem;
+}
+
 .navigation :global(.btn) {
   background-color: transparent;
   border: 1px solid #ffffff !important;
   border-radius: 35px;
   border: none;
   min-width: 77px;
-  padding: .5rem 5rem;
+  padding: 0.5rem 1rem;
   font-size: 13px;
+  width: 192px;
+  letter-spacing: 3px;
+}
+
+.navigation :global(.navbar-nav) {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navigation :global(.navbar-brand) img {
+  height: 34px;
+}
+
+@media (max-width: 1200px) {
+  .navigation :global(.navbar-toggler) {
+    border-color: #ffffff;
+  }
+  .navigation :global(.nav-link) {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navigation :global(.navbar-nav) {
+    padding-right: auto;
+  }
+  .navigation :global(.logo) {
+    display: none;
+  }
+  .navigation :global(.btn) {
+    display: none !important;
+  }
+  .navigation :global(img) {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=index.module.css.map */

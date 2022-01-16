@@ -1,0 +1,59 @@
+.cardContainer {
+  :global(.card) {
+    height: 668px;
+    border: none;
+  }
+  :global(img) {
+    height: auto;
+    width: 1000px;
+  }
+  :global(.card-body) {
+    padding: 0 12rem 0 4rem;
+    p:nth-child(1) {
+      color: #d4b254;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    p:nth-child(2) {
+      color: #222222;
+      font-size: 42px;
+      font-family: Helvetica-Bold;
+      line-height: 3rem;
+    }
+    p:nth-child(3) {
+      color: #777777;
+      font-size: 15px;
+      line-height: 2rem;
+    }
+  }
+  :global(.btn) {
+    background-color: #d4b254;
+    height: 60px;
+    max-width: 419px;
+    border-radius: 35px;
+    border: none;
+    padding: 0 4rem;
+    font-size: 15px;
+    margin: 1.2rem 0;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cardContainer {
+    :global(.flex-row) {
+      flex-direction: column !important;
+    }
+    :global(.card-body) {
+      padding: 3rem;
+    }
+    :global(.card) {
+      height: auto;
+    }
+    :global(img) {
+      height: auto;
+      width: auto;
+    }
+  }
+}

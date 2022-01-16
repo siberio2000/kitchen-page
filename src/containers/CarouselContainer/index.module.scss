@@ -1,25 +1,28 @@
 .carouselContainer {
   margin-left: auto !important;
   margin-right: auto !important;
-  // background-color: #EEEEEE !important;
   max-height: 600px;
   max-width: 590px;
   padding: 5rem 0;
-  p {
-    color: #000000;
-  }
   :global(.card-body) {
     p:nth-child(1) {
       color: #d4b254;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;;
     }
     p:nth-child(2) {
       color: #222222;
+      font-family: Helvetica-Bold;
+      font-size: 32px;;
+      line-height: 2.8rem;
     }
     p:nth-child(3) {
       color: #777777;
+      font-size: 18px;
+      line-height: 2.2rem;
     }
     p:nth-child(4) {
-      font-family: Roboto;
       font-size: 15px;
       color: #777777;
     }
@@ -27,16 +30,20 @@
   :global(.card) {
     border: none;
   }
+  :global(.card-body) {
+    background-color: #eeeeee;
+    padding: 0;
+  }
   :global(.carousel-control-next-icon) {
     background-image: url(../../images/arrow-right.png);
     position: relative;
-    left: 12rem;
+    left: 17rem;
     height: 70px;
   }
   :global(.carousel-control-prev-icon) {
     background-image: url(../../images/arrow-left.png);
     position: relative;
-    right: 12rem;
+    right: 17rem;
     height: 70px;
   }
   :global(.carousel-indicators) {
@@ -46,13 +53,38 @@
     background-color: #d4b254;
     height: 60px;
     max-width: 419px;
+    width: 100%;
     border-radius: 35px;
     border: none;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .carouselContainer {
+    :global(.card-body) {
+      p:nth-child(1) {
+        font-size: 13px;
+      }
+      p:nth-child(2) {
+        font-size: 22px;
+        line-height: 1.5rem;
+      }
+      p:nth-child(3) {
+        font-size: 15px;
+        line-height: 1.5rem;
+      }
+      p:nth-child(4) {
+        font-size: 15px;
+        color: #777777;
+      }
+    }
+    :global(.btn) {
+      font-size: 12px;
+    }
     :global(.carousel-control-next-icon) {
       left: 0;
     }

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom font for project */
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: local("Helvetica-Bold"),
+   url("./fonts/Helvetica-Bold-Font.ttf") format("truetype");
+  font-weight: bold;
+}

@@ -1,36 +1,50 @@
 .topContainer {
-  max-height: 2000px;
+  height: 900px;
   position: relative;
-  bottom: 4rem;
+  bottom: 8rem;
 }
 
 .topContainer p {
   color: #000000;
 }
 
+.topContainer :global(.card-body) {
+  width: 768px;
+}
+
 .topContainer :global(.card-body) p:nth-child(1) {
   color: #fff;
   font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .topContainer :global(.card-body) p:nth-child(2) {
   color: #fff;
   font-size: 52px;
-  line-height: 3rem;
+  line-height: 4rem;
+  font-family: Helvetica-Bold;
+}
+
+.topContainer :global(.carousel-inner) img {
+  height: 900px;
 }
 
 .topContainer :global(.btn) {
   background-color: #d4b254;
   height: 60px;
-  max-width: 419px;
+  width: 228px;
+  max-width: 228px;
   border-radius: 35px;
+  font-size: 15px;
   border: none;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   margin: 1rem 0;
+  letter-spacing: 3px;
 }
 
 .topContainer :global(.carousel-caption) {
-  bottom: 12rem;
+  bottom: 17rem;
 }
 
 .topContainer :global(.card) {
@@ -38,8 +52,17 @@
   border: none;
 }
 
+.topContainer :global(.carousel-indicators [data-bs-target]) {
+  width: 50px;
+  height: 5px;
+  opacity: 1;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 20px;
+}
+
 .topContainer :global(.carousel-indicators .active) {
-  background-color: #D4B254;
+  background-color: #d4b254;
 }
 
 .topContainer :global(.carousel-control-next-icon) {
@@ -48,5 +71,17 @@
 
 .topContainer :global(.carousel-control-prev-icon) {
   display: none;
+}
+
+@media (max-width: 992px) {
+  .topContainer :global(.card-body) {
+    width: 100%;
+    padding: 0;
+  }
+  .topContainer :global(.card-body) p:nth-child(2) {
+    color: #fff;
+    font-size: 26px;
+    line-height: 2rem;
+  }
 }
 /*# sourceMappingURL=index.module.css.map */

@@ -34,21 +34,20 @@ const GalleryContainer = () => {
     <>
       <Row className={styles.galleryContainer}>
         <Col md={12} className="text-center">
-          Customer Gallery
+          <p>Customer Gallery</p>
         </Col>
-        <Col md={12} className="d-flex justify-content-around pt-5 g-0">
+        <Col md={12} className="d-flex justify-content-around pt-3 g-5">
           <Row className="d-flex justify-content-around">
             {cards.map((card) => (
-              <Col key={card.id} xs={8} md={3}>
+              <Col key={card.id} xs={6} md={3}>
                 <GalleryCard data={card} />
               </Col>
             ))}
           </Row>
         </Col>
-        <Col md={12} className="d-flex justify-content-around pt-5 g-0">
+        <Col md={12} className="d-flex justify-content-around g-0">
         <Button variant="primary">VIEW MORE</Button>
         </Col>
-        
       </Row>
     </>
   );

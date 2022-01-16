@@ -15,7 +15,7 @@ const Main = () => {
       <Container style={{maxWidth: '2000px'}}>
         <Navbar />
         <TopContainer />
-        {/* <CardContainer /> */}
+        <CardContainer />
         <CarouselContainer />
         <GalleryContainer />
         <Footer />

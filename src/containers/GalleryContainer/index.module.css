@@ -2,8 +2,16 @@
   padding: 2rem 0 5rem 0;
 }
 
+.galleryContainer :global(p) {
+  color: #222222;
+  font-size: 32px;
+  padding: 6rem 0 0 0;
+  font-family: Helvetica-Bold;
+}
+
 .galleryContainer :global(.card) {
   max-width: 310px;
+  border: none;
 }
 
 .galleryContainer :global(.btn) {
@@ -13,11 +21,13 @@
   border-radius: 35px;
   border: none;
   padding: 1rem 3rem;
+  margin: 3rem 0 2.5rem 0;
 }
 
 @media (max-width: 576px) {
   .galleryContainer :global(.card) {
     width: 100%;
+    padding: .5rem 0;
   }
 }
 /*# sourceMappingURL=index.module.css.map */

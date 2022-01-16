@@ -1,0 +1,65 @@
+.cardContainer :global(.card) {
+  height: 668px;
+  border: none;
+}
+
+.cardContainer :global(img) {
+  height: auto;
+  width: 1000px;
+}
+
+.cardContainer :global(.card-body) {
+  padding: 0 12rem 0 4rem;
+}
+
+.cardContainer :global(.card-body) p:nth-child(1) {
+  color: #d4b254;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.cardContainer :global(.card-body) p:nth-child(2) {
+  color: #222222;
+  font-size: 42px;
+  font-family: Helvetica-Bold;
+  line-height: 3rem;
+}
+
+.cardContainer :global(.card-body) p:nth-child(3) {
+  color: #777777;
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+.cardContainer :global(.btn) {
+  background-color: #d4b254;
+  height: 60px;
+  max-width: 419px;
+  border-radius: 35px;
+  border: none;
+  padding: 0 4rem;
+  font-size: 15px;
+  margin: 1.2rem 0;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 1500px) {
+  .cardContainer :global(.flex-row) {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .cardContainer :global(.card-body) {
+    padding: 3rem;
+  }
+  .cardContainer :global(.card) {
+    height: auto;
+  }
+  .cardContainer :global(img) {
+    height: auto;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */
