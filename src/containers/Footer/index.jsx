@@ -10,7 +10,7 @@ import insta from "../../images/insta.png";
 const Footer = () => {
   return (
     <Row className={styles.footerContainer}>
-      <Col style={{height: '320px', borderBottom: '1px solid #8B8988'}}>
+      <Col className={styles.footerInner}>
         <Row className="justify-content-around">
           <Col md={12} className="d-flex justify-content-around logo-block g-0">
             <img className="logo" src={logo} alt="Logo" />
@@ -22,21 +22,20 @@ const Footer = () => {
               <Row>
                 <Col xs={6} sm={6} md={3}>
                   <Row>
-                    <h5 className="">About</h5>
-
-                    <div className="">
+                    <h5>About</h5>
+                    <div>
                       <a href="#.">Shop</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Plan My Kitchen</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">About Us</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Gallery</a>
                     </div>
                   </Row>
@@ -44,21 +43,21 @@ const Footer = () => {
 
                 <Col xs={6} sm={6} md={3}>
                   <Row>
-                    <h5 className="">Service</h5>
+                    <h5>Service</h5>
 
-                    <div className="">
+                    <div>
                       <a href="#.">FAQ</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Contact</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">How to Buy</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Downloads</a>
                     </div>
                   </Row>
@@ -66,17 +65,17 @@ const Footer = () => {
 
                 <Col xs={6} sm={6} md={3}>
                   <Row>
-                    <h5 className="">Info</h5>
+                    <h5>Info</h5>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Delivery</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Terms</a>
                     </div>
 
-                    <div className="">
+                    <div>
                       <a href="#.">Privacy</a>
                     </div>
                   </Row>
@@ -84,7 +83,7 @@ const Footer = () => {
 
                 <Col xs={6} sm={6} md={3}>
                   <Row>
-                    <h5 className="">Follow</h5>
+                    <h5>Follow</h5>
                     <span className="social-icons d-flex justify-content-around">
                       <a title="youtube" href="#sd">
                         <img

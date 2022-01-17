@@ -1,9 +1,9 @@
 .topContainer {
   height: 900px;
-  position: relative;
-  bottom: 8rem;
+  margin-top: -11rem;
   p {
     color: #000000;
+    margin-bottom: 0;
   }
   :global(.card-body) {
     width: 768px;
@@ -16,13 +16,15 @@
     p:nth-child(2) {
       color: #fff;
       font-size: 52px;
-      line-height: 4rem;
+      line-height: 4.2rem;
       font-family: Helvetica-Bold;
     }
   }
   :global(.carousel-inner) {
     img {
       height: 900px;
+      transform: scale(1);
+      object-fit: cover;
     }
   }
   :global(.btn) {
@@ -31,28 +33,29 @@
     width: 228px;
     max-width: 228px;
     border-radius: 35px;
-    font-size: 15px;;
+    font-size: 15px;
     border: none;
     padding: 1rem 3rem;
     margin: 1rem 0;
     letter-spacing: 3px;
-
   }
   :global(.carousel-caption) {
-    bottom: 17rem;
+    bottom: 13rem;
   }
   :global(.card) {
     background: none;
     border: none;
+  }
+  :global(.carousel-indicators) {
+    margin-bottom: 2rem;
   }
   :global(.carousel-indicators [data-bs-target]) {
     width: 50px;
     height: 5px;
     opacity: 1;
     border-top: 0;
-    border-bottom: 0;
-    border-radius: 20px;;
-  
+    border-bottom: 1rem;
+    border-radius: 20px;
   }
   :global(.carousel-indicators .active) {
     background-color: #d4b254;
@@ -67,6 +70,9 @@
 
 @media (max-width: 992px) {
   .topContainer {
+    :global(.carousel-caption) {
+      bottom: 16%;
+    }
     :global(.card-body) {
       width: 100%;
       padding: 0;
@@ -76,5 +82,11 @@
         line-height: 2rem;
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .topContainer {
+    margin-top: -21rem;
   }
 }

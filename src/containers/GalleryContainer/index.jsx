@@ -36,7 +36,7 @@ const GalleryContainer = () => {
         <Col md={12} className="text-center">
           <p>Customer Gallery</p>
         </Col>
-        <Col md={12} className="d-flex justify-content-around pt-3 g-5">
+        <Col md={12} className="d-flex justify-content-around pt-0 g-3">
           <Row className="d-flex justify-content-around">
             {cards.map((card) => (
               <Col key={card.id} xs={6} md={3}>

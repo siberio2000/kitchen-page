@@ -18,23 +18,23 @@ const Navigation = () => {
           variant="dark"
           className={styles.navigation}
         >
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Container>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse
               id="responsive-navbar-nav"
               className="justify-content-around"
             >
               <Nav>
                 <Col
-                  md={4}
-                  className="d-flex align-items-center justify-content-start"
+                  xs={12} md={12} lg={4}
+                  className="d-flex align-items-center justify-content-start socials"
                 >
                   <img src={facebook} alt="facebook" />
                   <img src={twitter} alt="twitter" />
                   <img src={insta} alt="insta" />
                 </Col>
                 <Col
-                  md={12}
+                  xs={12} md={12} lg={12}
                   className="d-flex align-items-center justify-content-center"
                 >
                   <Nav.Link href="#features">SHOP</Nav.Link>
@@ -43,7 +43,7 @@ const Navigation = () => {
               </Nav>
               <Navbar.Brand href="#home">
                 <Col
-                  md={12}
+                  xs={12} md={12} lg={12}
                   className="d-flex align-items-center justify-content-center"
                 >
                   <img className="logo" src={logo} alt="Logo" />
@@ -51,7 +51,7 @@ const Navigation = () => {
               </Navbar.Brand>
               <Nav>
                 <Col
-                  md={8}
+                  xs={12} md={12} lg={10}
                   className="d-flex align-items-center justify-content-center"
                 >
                   <Nav.Link href="#deets">ABOUT US</Nav.Link>
@@ -59,7 +59,7 @@ const Navigation = () => {
                 </Col>
 
                 <Col
-                  md={7}
+                  xs={12} md={12} lg={5}
                   className="d-flex align-items-center justify-content-end flex-row"
                 >
                   <Button
@@ -68,7 +68,7 @@ const Navigation = () => {
                   >
                     <Col>MY ORDER</Col>
                     <img
-                      className="logo align-items-center justify-content-center"
+                      className="align-items-center justify-content-center"
                       src={cart}
                       alt="Cart"
                     />

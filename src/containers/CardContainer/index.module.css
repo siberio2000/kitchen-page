@@ -1,3 +1,7 @@
+.cardContainer {
+  margin-top: -1px;
+}
+
 .cardContainer :global(.card) {
   height: 668px;
   border: none;
@@ -9,7 +13,7 @@
 }
 
 .cardContainer :global(.card-body) {
-  padding: 0 12rem 0 4rem;
+  padding: 0 15rem 0 4rem;
 }
 
 .cardContainer :global(.card-body) p:nth-child(1) {
@@ -52,7 +56,7 @@
             flex-direction: column !important;
   }
   .cardContainer :global(.card-body) {
-    padding: 3rem;
+    padding: 2rem;
   }
   .cardContainer :global(.card) {
     height: auto;

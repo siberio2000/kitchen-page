@@ -18,7 +18,7 @@ const TopContainer = () => {
             <Carousel.Caption className="d-flex justify-content-around">
               <Card>
                 <Card.Body>
-                  <p>Design and order your new kitchen online today 1</p>
+                  <p>Design and order your new kitchen online today</p>
                   <p>Bespoke & made to measure handmade kitchen design</p>
                   <Button variant="primary">ORDER NOW</Button>
                 </Card.Body>
@@ -29,13 +29,12 @@ const TopContainer = () => {
             <img
               className="d-block w-100 img-fluid"
               src={topBanner}
-              alt="Second slide"
+              alt="First slide"
             />
-
-            <Carousel.Caption>
+            <Carousel.Caption className="d-flex justify-content-around">
               <Card>
                 <Card.Body>
-                  <p>Design and order your new kitchen online today 2</p>
+                  <p>Design and order your new kitchen online today</p>
                   <p>Bespoke & made to measure handmade kitchen design</p>
                   <Button variant="primary">ORDER NOW</Button>
                 </Card.Body>
@@ -46,19 +45,19 @@ const TopContainer = () => {
             <img
               className="d-block w-100 img-fluid"
               src={topBanner}
-              alt="Third slide"
+              alt="First slide"
             />
-
-            <Carousel.Caption>
+            <Carousel.Caption className="d-flex justify-content-around">
               <Card>
                 <Card.Body>
-                  <p>Design and order your new kitchen online today 3</p>
+                  <p>Design and order your new kitchen online today</p>
                   <p>Bespoke & made to measure handmade kitchen design</p>
                   <Button variant="primary">ORDER NOW</Button>
                 </Card.Body>
               </Card>
             </Carousel.Caption>
           </Carousel.Item>
+         
         </Carousel>
       </Col>
     </Row>

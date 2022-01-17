@@ -8,7 +8,7 @@ import cx from "classnames";
 const CarouselContainer = () => {
   return (
     <Row>
-      <Col style={{backgroundColor: '#eeeeee', width: '2000px'}} className="g-2">
+      <Col style={{backgroundColor: '#eeeeee', width: '2000px'}} className="g-0">
         <Container>
           <Row className={cx(styles.carouselContainer, "text-center" )}>
             <Col>
@@ -16,7 +16,7 @@ const CarouselContainer = () => {
                 <Carousel.Item className="d-flex align-items-center justify-content-center">
                   <Card>
                     <Card.Body>
-                      <p>What Our Customers Say 1</p>
+                      <p>What Our Customers Say</p>
                       <p>
                         Over 35 years experience designing handmade kitchens
                       </p>
@@ -36,7 +36,7 @@ const CarouselContainer = () => {
                 <Carousel.Item className="d-flex align-items-center justify-content-center">
                   <Card>
                     <Card.Body>
-                      <p>What Our Customers Say 2</p>
+                      <p>What Our Customers Say</p>
                       <p>
                         Over 35 years experience designing handmade kitchens
                       </p>
@@ -56,7 +56,7 @@ const CarouselContainer = () => {
                 <Carousel.Item className="d-flex align-items-center justify-content-center">
                   <Card>
                     <Card.Body>
-                      <p>What Our Customers Say 3</p>
+                      <p>What Our Customers Say</p>
                       <p>
                         Over 35 years experience designing handmade kitchens
                       </p>
